@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Application</title>
+    <link rel="stylesheet" href="mstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#upload-your-waste">Upload Your Waste</a></li>
+                <li><a href="#complain-box">Complain Box</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="intro-container">
+            <h1>Welcome to ECO-ENGINE: The Waste Management System</h1>
+            <p>Efficiently manage sanitization, segregation, and disposal of your waste.</p>
+            <a href="#upload-your-waste" class="start-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works-section">
+        <h2>How It Works</h2>
+        <div class="steps-container">
+            <div class="step">
+                <img src="https://images.unsplash.com/photo-1522125670776-3c7abb882bc2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG9uZSUyMHVzZXIlMjBjbGlja2luZyUyMHBob3RvJTIwb2YlMjBzb21ldGhpbmclMjBieSUyMG1vYmlsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Step 1 Image">
+                <h3>Step 1</h3>
+                <p>Upload your waste image.</p>
+            </div>
+            <div class="step">
+                <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdCUyMGNhbGxpbmclMjBodW1hbnxlbnwwfHwwfHx8MA%3D%3D" alt="Step 2 Image">
+                <h3>Step 2</h3>
+                <p>Your waste is categorized as biodegradable or non-biodegradable.</p>
+            </div>
+            <div class="step">
+                <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG93JTIwaXQlMjB3b3JrfGVufDB8fDB8fHww" alt="Step 3 Image">
+                <h3>Step 3</h3>
+                <p>Trader will contact you for waste pickup.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="upload-your-waste" class="upload-section">
+        <h2>Upload Your Waste</h2>
+        <form id="upload-form">
+            <input type="file" id="fileInput" accept="image/*" required>
+            <input type="datetime-local" id="schedule-time" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="result-container">
+            <img id="preview" src="" alt="Uploaded Image">
+            <div id="result"></div>
+        </div>
+    </section>
+
+    <section id="complain-box" class="complain-section">
+        <h2>Complain Box</h2>
+        <form id="complain-form">
+            <input type="text" id="complain-address" placeholder="Address of the place" required>
+            <textarea id="complain-text" rows="4" placeholder="Describe your complaint" required></textarea>
+            <button type="submit">Submit Complaint</button>
+        </form>
+        <div id="complain-response" class="confirmation"></div>
+    </section>
+
+    <script src="mscript.js"></script>
+</body>
+</html>
